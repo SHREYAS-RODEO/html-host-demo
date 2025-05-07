@@ -3,30 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to My GitHub Page</title>
+  <title>Shreyas | GitHub Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      min-height: 100vh;
     }
-    h1 {
-      color: #4CAF50;
-    }
-    p {
+
+    .container {
+      background: #1c1c1e;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
       max-width: 600px;
       text-align: center;
+    }
+
+    h1 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      margin-top: 15px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .projects {
+      margin-top: 25px;
+    }
+
+    .projects a {
+      color: #03dac6;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      transition: color 0.2s ease;
+    }
+
+    .projects a:hover {
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is a sample HTML page hosted using GitHub Pages. Built by Shreyas 🚀</p>
+  <div class="container">
+    <h1>Hey, I'm Shreyas 👋</h1>
+    <div class="info">
+      <p>I’m an engineering student at <strong>Nitte Meenakshi Institute of Technology (NMIT)</strong>, passionate about nanotechnology, simulations, and clean code.</p>
+      <p>This is a sample HTML page hosted using GitHub Pages as part of my project collection.</p>
+    </div>
+
+    <div class="projects">
+      <h2>🔗 Featured Projects</h2>
+      <a href="https://github.com/SHREYAS-RODEO/Nanogui" target="_blank">🧪 Nanomaterial Simulation GUI</a>
+      <a href="https://github.com/SHREYAS-RODEO/Register-Allocator" target="_blank">📊 Register Allocation Visualizer</a>
+      <a href="https://github.com/SHREYAS-RODEO/Depression-Detection" target="_blank">🧠 Depression Detection via Text ML</a>
+    </div>
+
+    <footer>
+      <p>Made with 💻 by Shreyas — Hosted with GitHub Pages</p>
+    </footer>
+  </div>
 </body>
 </html>
